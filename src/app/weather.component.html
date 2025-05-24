@@ -1,0 +1,17 @@
+<div class="weather-container">
+    <h2>Weather Dashboard</h2>
+    <input [(ngModel)]="city" placeholder="Enter city name" />
+    <button (click)="fetchWeather()">Search</button>
+  
+    <div class="weather-data" *ngIf="weatherData">
+      <h3>{{ weatherData.name }}, {{ weatherData.sys.country }}</h3>
+      <p>Temperature: {{ weatherData.main.temp }} °C</p>
+      <p>Weather: {{ weatherData.weather[0].description }}</p>
+     <p style="color:green"><b>Date: {{currentDate}}</b></p>
+    </div>
+  
+    <div class="error" *ngIf="error">
+      <p>{{ error }}</p>
+    </div>
+  </div>
+  
