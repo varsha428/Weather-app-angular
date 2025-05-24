@@ -1,0 +1,18 @@
+<table class="table table-bordered mt-3">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Temperature (°C)</th>
+      <th>Condition</th>
+      <th>Icon</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let day of forecastData">
+      <td>{{ day.date }}</td>
+      <td>{{ day.temp }}°C</td>
+      <td>{{ day.condition }}</td>
+      <td><img [src]="day.iconUrl" alt="weather icon" /></td>
+    </tr>
+  </tbody>
+</table>
