@@ -1,6 +1,31 @@
 # WeatherApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+This project is a simple Angular application that displays the current weather and forecast for a searched city using the [OpenWeatherMap API](https://openweathermap.org/api).
+
+## Features
+
+- Search for any city to view its current weather conditions.
+- Displays temperature, weather description, and country.
+- Shows the current date.
+- Fetches and displays a multi-day weather forecast in a table.
+- Responsive and user-friendly UI.
+
+## Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- [Angular CLI](https://angular.io/cli) (v17+)
+
+## Setup
+
+1. **Clone the repository:**
+
+2. **Install dependencies:**
+
+3. **Configure OpenWeatherMap API Key:**
+- Open `src/app/weather/weather.service.ts`.
+   - Replace `'YOUR_API_KEY'` with your actual OpenWeatherMap API key.
+
+
 
 ## Development server
 
